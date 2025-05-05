@@ -1,0 +1,88 @@
+.about-container {
+    padding: 100px;
+    background-color: orange;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 45%; /* Make it circular */
+    padding: 10px;
+    animation: rotateImage 10s linear infinite;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Rotation animation */
+  @keyframes rotateImage {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .about-text {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-text h4 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .about-text h1 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    .about-content {
+      flex-wrap: nowrap;
+      text-align: left;
+    }
+  
+    .about-text {
+      padding: 0 20px;
+    }
+  
+    .about-text h1 {
+      font-size: 32px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-image {
+      max-width: 100%;
+    }
+  
+    .about-text {
+      padding: 10px 0;
+    }
+  }
+  

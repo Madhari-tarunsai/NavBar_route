@@ -1,0 +1,118 @@
+.home-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .home-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center the text content within the overlay */
+  }
+  
+  .image-text h1 {
+    margin-bottom: 10px;
+    font-size: 2rem; /* Adjust base font size */
+  }
+  
+  .image-text p {
+    font-size: 1rem; /* Adjust base font size */
+    margin-bottom: 15px;
+  }
+  
+  .image-text button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e23744;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Media query for small devices (e.g., phones) */
+  @media (max-width: 600px) {
+    .image-text {
+      top: 20%; /* Adjust vertical position for smaller screens */
+      padding: 15px;
+    }
+  
+    .image-text h1 {
+      font-size: 1.5rem; /* Smaller heading for phones */
+      margin-bottom: 8px;
+    }
+  
+    .image-text p {
+      font-size: 0.9rem; /* Smaller paragraph text for phones */
+      margin-bottom: 10px;
+    }
+  
+    .image-text button {
+      font-size: 0.9rem; /* Smaller button text for phones */
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Media query for medium-sized devices (e.g., tablets) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .image-text {
+      top: 25%; /* Adjust vertical position for tablets */
+      padding: 25px;
+    }
+  
+    .image-text h1 {
+      font-size: 1.8rem; /* Slightly smaller heading for tablets */
+      margin-bottom: 10px;
+    }
+  
+    .image-text p {
+      font-size: 1rem; /* Maintain base paragraph text size */
+      margin-bottom: 12px;
+    }
+  
+    .image-text button {
+      font-size: 1rem; /* Maintain base button text size */
+      padding: 10px 20px;
+    }
+  }
+  
+  /* You can add more media queries for larger screens if needed */
+  @media (min-width: 1025px) {
+    .image-text {
+      top: 30%; /* Maintain base vertical position for larger screens */
+      padding: 30px;
+    }
+  
+    .image-text h1 {
+      font-size: 2.5rem; /* Slightly larger heading for desktops */
+      margin-bottom: 15px;
+    }
+  
+    .image-text p {
+      font-size: 1.1rem; /* Slightly larger paragraph text for desktops */
+      margin-bottom: 20px;
+    }
+  
+    .image-text button {
+      font-size: 1.1rem; /* Slightly larger button text for desktops */
+      padding: 12px 25px;
+    }
+  }
